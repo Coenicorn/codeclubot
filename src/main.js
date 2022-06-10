@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
-const CONFIG = require("./config.json");
+const CONFIG = require("./.env");
+console.log(CONFIG);
 const handleCommands = require("./commandHandler/handleCommands.js");
 
 // create Discord client

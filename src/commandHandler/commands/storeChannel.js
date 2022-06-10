@@ -1,5 +1,3 @@
-const CONFIG = require("../../config.json");
-
 function onCommand(message) {
     // do some magic
 }
