@@ -24,6 +24,14 @@ function addParticipant(message) {
 }
 
 function onCommand(message) {
+    // command to start the registration, admin privilege
+    if (message.content.toLowerCase().includes("--start") && message.member.permissionsIn(message.channel).has("ADMINISTRATOR")) {
+
+
+
+        return;
+    }
+
     let result = addParticipant(message);
 
     let reply = "You're are now a participant! 👍\n\n";
