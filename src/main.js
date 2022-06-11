@@ -1,4 +1,7 @@
 const Discord = require("discord.js");
+
+// expects token.json to exist within the same directory, json structure:
+// {"TOKEN": "[insert token here]"}
 const CONFIG = require("./token.json");
 const handleCommands = require("./commandHandler/handleCommands.js");
 
