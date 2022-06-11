@@ -1,4 +1,4 @@
 src/token.json
 node_modules/
-src/commandHandler/commands/
+src/commandHandler/commands/*.json
 commands_copy/
