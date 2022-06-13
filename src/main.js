@@ -1,9 +1,7 @@
 const Discord = require("discord.js");
 
-// expects token.json to exist within the same directory, json structure:
-// {"TOKEN": "[insert token here]"}
-const CONFIG = require("./token.json");
-const handleCommands = require("./commandHandler/handleCommands.js");
+const CONFIG = require("../config.json");
+const handleCommands = require("./deploy-commands");
 
 // create Discord client
 const client = new Discord.Client({
@@ -12,9 +10,6 @@ const client = new Discord.Client({
         Discord.Intents.FLAGS.GUILDS
     ]
 });
-
-const channels = [];
-channels["general"] = client.channels.cache.find(channel => channel.id == CONFIG.CHANNELS.general);
 
 // yay! executed succesfully!
 client.once("ready", () => {
@@ -27,4 +22,4 @@ client.on("messageCreate", message => {
 });
 
 // magic token action here
-client.login(CONFIG.TOKEN);
+client.login(CONFIG.token);

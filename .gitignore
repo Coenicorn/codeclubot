@@ -1,6 +1,3 @@
 # NEVER EVER CHANGE THIS LINE, CONTAINS MY DISCORD TOKEN BRAH :))
-src/token.json
-
+config.json
 node_modules/
-src/commandHandler/commands/*.json
-commands_copy/
